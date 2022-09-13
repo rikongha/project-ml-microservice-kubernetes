@@ -5,11 +5,10 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install --no-cache-dir --upgrade-pip && pip install --no-cache-dir  -r requirements.txt 
+RUN pip install --no-cache-dir --upgrade pip &&\
+		pip install --no-cache-dir --upgrade -r requirements.txt
 
-## Step 4:
-# Expose port 80
+Expose 80
 
-## Step 5:
-# Run app.py at container launch
+CMD ["python", "app.py"]
 
