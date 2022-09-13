@@ -1,18 +1,11 @@
 #!/usr/bin/env bash
 
 # This tags and uploads an image to Docker Hub
+dockerpath="rikongha/micros-k8s-api:v1.0.0"
 
-# Step 1:
-# This is your Docker ID/path
-# dockerpath=<>
+kubectl run mlmicrosapi --image=$dockerpath --port=80 --labels app=mlmicrosapi
 
-# Step 2
-# Run the Docker Hub container with kubernetes
+kubectl get pods
 
-
-# Step 3:
-# List kubernetes pods
-
-# Step 4:
-# Forward the container port to a host
+kubectl port-forward mlmicrosapi 8000:80
 
