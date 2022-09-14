@@ -1,4 +1,4 @@
-[![rikongha](https://circleci.com/gh/rikongha/project-ml-microservice-kubernetes.svg?style=svg)](https://app.circleci.com/insights/github/rikongha/project-ml-microservice-kubernetes)
+[![rikongha](https://circleci.com/gh/rikongha/project-ml-microservice-kubernetes.svg?style=svg)](https://app.circleci.com/pipelines/github/rikongha/project-ml-microservice-kubernetes)
 
 ## Project Overview
 
