@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-## Complete the following steps to get Docker running locally
-
 docker build --tag=micros-k8s-api .
 
 docker image ls

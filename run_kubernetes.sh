@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+tag=v1.0.1
+dockerpath="rikongha/micros-k8s-api"
 
-# This tags and uploads an image to Docker Hub
-dockerpath="rikongha/micros-k8s-api:v1.0.0"
-
-kubectl run mlmicrosapi --image=$dockerpath --port=80 --labels app=mlmicrosapi
+kubectl run mlmicrosapi \
+    --image=$dockerpath:$tag \
+    --port=80 --labels app=mlmicrosapi
 
 kubectl get pods
 
